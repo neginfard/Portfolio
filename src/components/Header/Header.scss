@@ -1,0 +1,47 @@
+
+//variables
+  $headings-color: #56bec5;
+  $headings-color-hover: rgb(5, 54, 56);
+  $headings-color-hover-border:#00BBC5;
+  $navbar-bg-color:#FAFAFC;
+
+.header{
+    // height: 10vh;
+    position: relative;
+
+    &_navbar{
+        background: $navbar-bg-color;
+        display: flex;
+        justify-content: space-around;
+        padding: .3rem 0;
+        width: 100vw;
+        position: fixed;
+        z-index: 99;
+        align-items: center;
+        margin: auto;
+
+        a{
+            color: $headings-color;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 1.2rem;
+
+        }
+        a:hover{
+            color:$headings-color-hover;
+            transition: .3s;
+            border-bottom: $headings-color-hover-border;
+            transform-style: .4s;
+        }
+    }
+}
+
+    // @media query for screen and (max-width: 885px) ///
+      
+    @media screen and (max-width: 885px) {
+       .header_navbar{
+           p{
+               font-size: 14px;
+           }
+       }
+      }

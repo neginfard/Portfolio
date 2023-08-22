@@ -1,0 +1,158 @@
+/*********variables**********/
+$skill-darker-color:rgb(2, 105, 105);
+$skill-dark-color:rgb(9, 141, 141);
+$skill-light-color:rgb(14, 187, 187);
+$skill-text-darker-color:rgb(147, 236, 236);
+$skill-text-dark-color:rgb(191, 243, 243);
+$skill-text-light-color:rgb(212, 247, 247);
+
+/*************mixIn***************/
+
+  
+  @mixin skill-dark() {
+    $skill-dark-color:rgb(9, 141, 141);
+    $skill-text-dark-color:rgb(191, 243, 243);
+  }
+  @mixin skill-darker() {
+    $skill-light-color:rgb(14, 187, 187);
+    $skill-text-light-color:rgb(218, 248, 248);
+  }
+  @mixin skill-col-margin {
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+.about{
+    // height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1rem;
+    align-content: center;
+    align-items: center;
+    background: #FBFBFB;
+
+    .my-photo{
+      img {
+           width: 20rem;
+           border-radius: 5px;
+           margin: 1rem
+        }
+    }
+
+    p{
+        font-weight: 400;
+        font-family: libre franklin,Helvetica,Arial,sans-serif;
+        font-size:1.2rem;
+        line-height: 1.88889;
+        color: #A9A9A9;
+        max-width: 66.66667%;
+        text-align: center;
+        
+    }
+    h2.title{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 1.35;
+        color: #151515;
+
+        span.first-letter{
+            color: #00BBC5;
+            // font-weight: bold;
+           
+        }
+    }
+    h3{
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 1.4;
+        color: #8b8888;
+        // color: #A9A9A9;
+        max-width: 76.66%;
+        text-align: center;
+        
+    }
+}
+
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(186, 226, 235);
+    justify-content: center;
+    padding: 5rem 0;
+
+    h2.title{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 1.35;
+        color: #151515;
+
+      
+    }
+   
+
+    &_col{
+        display: flex;
+        margin: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+
+        &--skill{
+            display: flex;
+            flex-direction: column;
+            
+    
+            .skill-img{
+                background: #00c5ef;
+               padding: 2rem;
+            }
+            .skill-text{
+               background: #FBFBFB;
+               padding: 2rem;
+
+            }
+        }
+    }
+ 
+}
+.darker {
+   @include skill-col-margin;
+    .bg-img{
+        background: $skill-darker-color;
+    } 
+    .bg-text{
+        background:  $skill-text-darker-color;
+    }
+  }
+
+  .dark {
+    @include skill-col-margin;
+    .bg-img{
+        background: $skill-dark-color;
+    } 
+    .bg-text{
+        background:  $skill-text-dark-color;
+    }
+  }
+
+  .light {
+    @include skill-col-margin;
+    .bg-img{
+        background: $skill-light-color;
+    } 
+    .bg-text{
+        background:  $skill-text-light-color;
+    }
+  }
+
+    // @media query for screen and (max-width: 885px) ///
+      
+    @media screen and (max-width: 885px) {
+        .about h3{
+          max-width: initial;
+          text-align: justify;
+    
+        }
+      }

@@ -1,0 +1,157 @@
+/*********variables**********/
+/*************mixIn***************/
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FBFBFB;
+}
+
+.about .my-photo img {
+  width: 20rem;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.about p {
+  font-weight: 400;
+  font-family: libre franklin,Helvetica,Arial,sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.88889;
+  color: #A9A9A9;
+  max-width: 66.66667%;
+  text-align: center;
+}
+
+.about h2.title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.35;
+  color: #151515;
+}
+
+.about h2.title span.first-letter {
+  color: #00BBC5;
+}
+
+.about h3 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: #8b8888;
+  max-width: 76.66%;
+  text-align: center;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #bae2eb;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 0;
+}
+
+.skills h2.title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.35;
+  color: #151515;
+}
+
+.skills_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills_col--skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills_col--skill .skill-img {
+  background: #00c5ef;
+  padding: 2rem;
+}
+
+.skills_col--skill .skill-text {
+  background: #FBFBFB;
+  padding: 2rem;
+}
+
+.darker {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.darker .bg-img {
+  background: #026969;
+}
+
+.darker .bg-text {
+  background: #93ecec;
+}
+
+.dark {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.dark .bg-img {
+  background: #098d8d;
+}
+
+.dark .bg-text {
+  background: #bff3f3;
+}
+
+.light {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.light .bg-img {
+  background: #0ebbbb;
+}
+
+.light .bg-text {
+  background: #d4f7f7;
+}
+
+@media screen and (max-width: 885px) {
+  .about h3 {
+    max-width: initial;
+    text-align: justify;
+  }
+}
+/*# sourceMappingURL=Main.css.map */
